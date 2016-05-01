@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighWay Accident_Jessica Ro</title>
+
+    <!-- Libraries -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+
+    <!-- Custom files -->
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <!-- your script file -->
+    <script src="js/main.js"></script>
+  </head>
+  <body class="container">
+    <h1>Highway Accidents 2007</h1>
+    <p>This data visualization shows how much more driving under influence affects fatality in car accidents compared to car accidents with no drunk drivers. The data was retrieved from <a href="https://wiki.csc.calpoly.edu/datasets/wiki/HighwayAccidents">Trac Open Source Project</a>
+
+
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-primary active">
+        <input value= '0' class="drunkness" type="radio" name="options" id="option1" autocomplete="off">NON-DRUNK DRIVER
+      </label>
+      <label class="btn btn-primary">
+        <input value="1" type="radio" class="drunkness" name="options" id="option2" autocomplete="off" checked>DRUNK-DRIVER
+      </label>
+    </div>
+
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-primary active">
+        <input value = "VE_TOTAL" class = "yVarType" type="radio" name="options" id="option1" autocomplete="off">Vehicles involved in the crash
+      </label>
+      <label class="btn btn-primary">
+        <input value = "PERSONS" class = "yVarType" type="radio" name="options" id="option2" autocomplete="off" checked>People involved in the crash
+      </label>
+    </div>
+
+
+    <h2>U.S. Fatality rates in highway accidents 2007</h2>
+
+    <div id="vis"></div>
+  </body>
+</html>
